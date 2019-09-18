@@ -40,7 +40,7 @@
     },
     {
       "name": "concat-str",
-      "tags": [ "str", "function", "opperator" ]
+      "tags": [ "str", "function", "operator" ]
     },
     {
       "name": "get",
@@ -52,7 +52,7 @@
     },
     {
       "name": "add",
-      "tags": [ "math", "opperator", "function" ]
+      "tags": [ "math", "operator", "function" ]
     },
     {
       "name": "sub",
@@ -120,7 +120,7 @@
     },
     {
       "name": "multiply",
-      "tag": "math"
+      "tags": [ "advanced" ]
     },
     {
       "name": "multiply-recursive",
