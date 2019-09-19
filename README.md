@@ -1,17 +1,37 @@
-[![Build Status](https://travis-ci.org/nan-academy/js-training.svg?branch=master)](https://travis-ci.org/nan-academy/js-training)
+[![Build Status](https://travis-ci.org/WildCodeSchool/js-training-tdd.svg?branch=master)](https://travis-ci.org/WildCodeSchool/js-training-tdd)
+
+# JS Training with TDD
+
+Credits: [Clément Denis](https://github.com/kigiri) for the [original repo](https://github.com/nan-academy/js-training).
+
 ## Setup
-First, [**fork**](https://github.com/nan-academy/js-training/fork?fragment=1) this repository.
-### globals dependencies
-install globaly node on your computer
+
+### Install Node.js
+
+You have to install Node.js using NVM, **not** the packages on Node's homepage. Here's a summary of what you have to do (see [installation instructions](https://github.com/nvm-sh/nvm#installation-and-update) on the NVM repo for more details). Open your terminal and run these commands:
+
+```sh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+source ~/.bashrc
+nvm install v10.16.3
+```
+
+You can verify that it worked by running `node -v`, which should display:
+
+    v10.16.3
+
+### Get this repo
+
+First, [**fork**](https://github.com/WildCodeSchool/js-training-tdd/fork?fragment=1) this repository: you'll then have a copy of this repo under your GitHub account.
+
+Then go to wherever you store your development work, and run these commands to clone the forked repo (replace `GITHUB_LOGIN` with your login):
 
 ```sh
 # download your code locally
-git clone https://github.com/GITHUB_LOGIN/js-training.git
-# don't forget to remplace GITHUB_LOGIN by your github login
+git clone https://github.com/GITHUB_LOGIN/js-training-tdd.git
 
 # change working directory to the newly cloned repository
-cd js-training
-
+cd js-training-tdd
 ```
 
 ## Testing
@@ -22,7 +42,7 @@ You may either use our test tool to check all files
 # run the test runner
 ./tester
 ```
-![output-tester](https://github.com/nan-academy/js-training/blob/master/img/output-tester.png)
+![output-tester](https://github.com/WildCodeSchool/js-training-tdd/blob/master/img/output-tester.png)
 
 Or you can run only a some tests with
 ```sh
@@ -34,7 +54,7 @@ Or you can test files one by one with node
 # open a file in node
 node exercises/primitives
 ```
-![output-node](https://github.com/nan-academy/js-training/blob/master/img/output-node.png)
+![output-node](https://github.com/WildCodeSchool/js-training-tdd/blob/master/img/output-node.png)
 
 *our tester may include bugs, feel free to check the code and fix it*
 
@@ -55,20 +75,20 @@ vim primitives.js
 # I can not be held responsable if you use anything else.
 ```
 
-![where-to-code](https://github.com/nan-academy/js-training/blob/master/img/where-to-code.png)
+![where-to-code](https://github.com/WildCodeSchool/js-training-tdd/blob/master/img/where-to-code.png)
 
 ## Get Help !
 We maintain an example based code documentation
 
 All you need to know to solve those exercises is described in them.
-- [Primitive and Operators](https://github.com/nan-academy/js-training/blob/master/examples/primitive-and-operators.js) [[screencast](https://scrimba.com/c/cwyaEAd)]
-- [Variables](https://github.com/nan-academy/js-training/blob/master/examples/variables.js) [[screencast](https://scrimba.com/c/cLrBKA8)]
-- [Data-Structures](https://github.com/nan-academy/js-training/blob/master/examples/data-structures.js) [[screencast](https://scrimba.com/c/c9Py3sG)]
-- [Get](https://github.com/nan-academy/js-training/blob/master/examples/get.js) [[screencast](https://scrimba.com/c/cvzg2Tq)]
-- [Set](https://github.com/nan-academy/js-training/blob/master/examples/set.js) [[screencast](https://scrimba.com/c/cbWrGcg)]
-- ...[full list](https://github.com/nan-academy/js-training/tree/master/examples)
+- [Primitive and Operators](https://github.com/WildCodeSchool/js-training-tdd/blob/master/examples/primitive-and-operators.js) [[screencast](https://scrimba.com/c/cwyaEAd)]
+- [Variables](https://github.com/WildCodeSchool/js-training-tdd/blob/master/examples/variables.js) [[screencast](https://scrimba.com/c/cLrBKA8)]
+- [Data-Structures](https://github.com/WildCodeSchool/js-training-tdd/blob/master/examples/data-structures.js) [[screencast](https://scrimba.com/c/c9Py3sG)]
+- [Get](https://github.com/WildCodeSchool/js-training-tdd/blob/master/examples/get.js) [[screencast](https://scrimba.com/c/cvzg2Tq)]
+- [Set](https://github.com/WildCodeSchool/js-training-tdd/blob/master/examples/set.js) [[screencast](https://scrimba.com/c/cbWrGcg)]
+- ...[full list](https://github.com/WildCodeSchool/js-training-tdd/tree/master/examples)
 
-And we also made you a currated list of all the most usefull methods :
+And we also made you a curated list of all the most usefull methods :
 
 - Math
   [min](https://devdocs.io/javascript/global_objects/math/min),
@@ -158,7 +178,7 @@ the style
 
 ## Automated test
 We recommand to use [Travis](https://travis-ci.org) to automatise the testing phase, allow this repo and add this code in your README
-`[![Build Status](https://travis-ci.org/GITHUB_LOGIN/js-training.svg?branch=master)](https://travis-ci.org/GITHUB_LOGIN/js-training)`
+`[![Build Status](https://travis-ci.org/GITHUB_LOGIN/js-training-tdd.svg?branch=master)](https://travis-ci.org/GITHUB_LOGIN/js-training-tdd)`
 by remplacing GITHUB_LOGIN by your github login
 
 ## Contribute
@@ -166,7 +186,7 @@ We greatly recommand you to add your own tests to this list
 
 - add your test file *(ex: `exercises/my-test.js`)*
 - edit `package.json` and add `"my-test"` to the `"tests"` array with the syntax `{"tag": X, "name": NAME}` where you replace the tag (x) and the name (NAME)
-- make a pull request !`https://github.com/nan-academy/js-training/compare/master...GITHUB_LOGIN:master`
+- make a pull request !`https://github.com/WildCodeSchool/js-training-tdd/compare/master...GITHUB_LOGIN:master`
 
 *All the tests must be written using [assert](https://nodejs.org/api/assert.html)
 for `./tester` to work properly.*
