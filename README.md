@@ -6,9 +6,15 @@ Credits: [Clément Denis](https://github.com/kigiri) for the [original repo](htt
 
 ## Setup
 
-### Install Node.js
+**Prerequisites**: you must have installed Git!
 
-You have to install Node.js using NVM, **not** the packages on Node's homepage. Here's a summary of what you have to do (see [installation instructions](https://github.com/nvm-sh/nvm#installation-and-update) on the NVM repo for more details). Open your terminal and run these commands:
+Node.js is a platform which makes it possible to run JavaScript code outside the web browser.
+
+You have to install Node.js, preferably **not** with the packages on Node's download page.
+
+### Install Node.js on Linux/MacOS
+
+ You are going to use NVM (Node Version Manager). Here's a summary of what you have to do (see [installation instructions](https://github.com/nvm-sh/nvm#installation-and-update) on the NVM repo for more details). Open your terminal and run these commands:
 
 ```sh
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
@@ -19,6 +25,18 @@ nvm install v10.16.3
 You can verify that it worked by running `node -v`, which should display:
 
     v10.16.3
+
+### Install Node.js on Windows
+
+The original NVM doesn't support Windows. You're going to use [NVM for Windows](https://github.com/coreybutler/nvm-windows). Get to the [releases page](https://github.com/coreybutler/nvm-windows/releases). Under the latest version (1.1.7 as of September 2019), download the `nvm-setup.zip` file (or use this [direct link](https://github.com/coreybutler/nvm-windows/releases/download/1.1.7/nvm-setup.zip)).
+
+Extract the archive, and run `nvm-setup.exe`. Complete the setup wizard. Then, quit Git Bash if it is running, re-launch it, and type:
+
+```sh
+nvm install v10.16.3
+```
+
+Running `node -v` should display: `v10.16.3`.
 
 ### Get this repo
 
