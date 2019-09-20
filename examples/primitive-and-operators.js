@@ -37,7 +37,7 @@ console.log('Hello World!')
 console.log("I'm such a nice boy") // but you may use " if your string contains '
 
 // if you need to have a quote in a string you can escape it with a backslash \
-console.log('It\'s time to escape !!')
+console.log('It\'s time to escape!!')
 console.log('Hello' + 'World!')
 console.log('Hello\nWorld!')
 console.log(`Hello
@@ -57,7 +57,7 @@ console.log('21' * false) // false become the number 0
 
 // When javascript can't compute a number it returns NaN (stands for 'Not a Number')
 console.log(NaN)
-console.log('21' * 'pouet')
+console.log('21' * 'tomato')
 
 // Infinity is another special number
 console.log(Infinity)
@@ -97,7 +97,7 @@ console.log(!0) // = true
 console.log(!1) // = false
 console.log(!123) // = false
 console.log(!'') // = true
-console.log(!'pouet') // = false
+console.log(!'tomato') // = false
 
 // Type coercion is performed for comparisons with double equals...
 console.log('5' == 5) // = true
