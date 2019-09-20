@@ -97,7 +97,7 @@ vim primitives.js
 
 ![where-to-code](https://github.com/WildCodeSchool/js-training-tdd/blob/master/img/where-to-code.png)
 
-## Get Help !
+## Get Help!
 
 We maintain an example-based code documentation
 
