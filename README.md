@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.org/WildCodeSchool/js-training-tdd.svg?branch=master)](https://travis-ci.org/WildCodeSchool/js-training-tdd)
-
 # JS Training with TDD
 
 Credits: [Clément Denis](https://github.com/kigiri) for the [original repo](https://github.com/nan-academy/js-training).
@@ -55,45 +53,28 @@ cd js-training-tdd
 ```
 
 ## Testing
+
 Once you have coded your masterpiece, you can start to test your solutions.
 
-You may either use our test tool to check all files
+You can run tests for a single section:
+```sh
+# run the test runner with args ( basics, advanced, math, get)
+./tester basics
+```
+
+![output-tester-basics](https://github.com/WildCodeSchool/js-training-tdd/blob/master/img/output-tester-basics.png)
+
+**Later on**, you may use `tester` with no argument, to check exercises from _all_ sections (in this example, `basics`, `math` and part of `str` have been solved):
+
 ```sh
 # run the test runner
 ./tester
 ```
 ![output-tester](https://github.com/WildCodeSchool/js-training-tdd/blob/master/img/output-tester.png)
 
-Or you can run only a some tests with
-```sh
-# run the test runner with args ( basics, advanced, math, get)
-./tester basics
-```
-Or you can test files one by one with node
-```sh
-# open a file in node
-node exercises/primitives
-```
-![output-node](https://github.com/WildCodeSchool/js-training-tdd/blob/master/img/output-node.png)
-
-*our tester may include bugs, feel free to check the code and fix it*
-
-(in doubt use node)
-
 ## Solving
-You can start editing the javascript files with your favorite text editor.
-```sh
-# Sublime Text
-subl primitives.js
 
-# VSCode
-code primitives.js
-
-# Vim
-vim primitives.js
-
-# I can not be held responsable if you use anything else.
-```
+You can start editing the JavaScript files with your favorite text editor i.e. VSCode, Atom, Sublime Text, etc.
 
 ![where-to-code](https://github.com/WildCodeSchool/js-training-tdd/blob/master/img/where-to-code.png)
 
@@ -179,35 +160,3 @@ _[fill](https://devdocs.io/javascript/global_objects/array/fill)*_
 
 _(*) methods in italics are **NOT** pure (using them with the same arguments won't return the same result).
 They must be used with caution as it is harder to predict their results_
-
-## Update
-We may update tests, to apply them fetch and merge the master branch back to
-your branch.
-
-```sh
-git merge pull push branch checkout origin master stash pop
-```
-
-## Test Style
-We recommand to use [`editorconfig`](http://editorconfig.org/#download) to
-auto-config your editor to match the coding style
-
-We also made an `.eslint` rule to help you formating your code.
-
-You may want to use [`eslint`](https://eslint.org/) and [`prettier-eslint`](https://github.com/prettier/prettier-eslint) for painless application of
-the style
-
-## Automated test
-We recommand to use [Travis](https://travis-ci.org) to automatise the testing phase, allow this repo and add this code in your README
-`[![Build Status](https://travis-ci.org/GITHUB_LOGIN/js-training-tdd.svg?branch=master)](https://travis-ci.org/GITHUB_LOGIN/js-training-tdd)`
-by remplacing GITHUB_LOGIN by your github login
-
-## Contribute
-We greatly recommand you to add your own tests to this list
-
-- add your test file *(ex: `exercises/my-test.js`)*
-- edit `package.json` and add `"my-test"` to the `"tests"` array with the syntax `{"tag": X, "name": NAME}` where you replace the tag (x) and the name (NAME)
-- make a pull request !`https://github.com/WildCodeSchool/js-training-tdd/compare/master...GITHUB_LOGIN:master`
-
-*All the tests must be written using [assert](https://nodejs.org/api/assert.html)
-for `./tester` to work properly.*
