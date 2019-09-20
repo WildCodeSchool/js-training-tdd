@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 /*
   if / else
@@ -20,34 +20,34 @@
 
 */
 
-const condition = true
+const condition = true;
+
 if (condition) {
-  console.log('the condition is truthy')
-  console.log('hey 2 expression yo !')
+  console.log('the condition is truthy');
+  console.log('hey 2 expression yo !');
 }
 
 // like for values, we can inverse with !
 if (!condition) {
   // this block will never be executed as our condition is false
 } else {
-  console.log('the condition is truthy')
+  console.log('the condition is truthy');
 }
-
 
 // now, a simplification can be made, our else isn't necessary here
 const min = (a, b) => {
   if (a < b) {
-    return b
+    return b;
   }
-  return a
+
+  return a;
   // since we return in our if, we are sure that the condition is false
   // if this code is executed
 
   // Thanks to this you will very rarely need else and else if conditions
-}
+};
 
-console.log(min(4, 29))
-console.log(min(4, 2))
-
+console.log(min(4, 29));
+console.log(min(4, 2));
 
 // TODO: find some exemples good fonctions to learn if if if if #obama

@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 /*
  * Create the `cutFirst` function that takes a string and remove the 2 first characters
@@ -10,8 +10,10 @@
  * https://github.com/nan-academy/refs/blob/master/js-training/methods.md#string---transform
  */
 
-//* Begin of tests
-const assert = require('assert')
+// Your code:
 
-assert.fail('You must write your own tests')
+//* Begin of tests
+const assert = require('assert');
+
+assert.fail('You must write your own tests');
 // End of tests */

@@ -96,17 +96,18 @@ vim primitives.js
 ![where-to-code](https://github.com/WildCodeSchool/js-training-tdd/blob/master/img/where-to-code.png)
 
 ## Get Help !
-We maintain an example based code documentation
+
+We maintain an example-based code documentation
 
 All you need to know to solve those exercises is described in them.
-- [Primitive and Operators](https://github.com/WildCodeSchool/js-training-tdd/blob/master/examples/primitive-and-operators.js) [[screencast](https://scrimba.com/c/cwyaEAd)]
-- [Variables](https://github.com/WildCodeSchool/js-training-tdd/blob/master/examples/variables.js) [[screencast](https://scrimba.com/c/cLrBKA8)]
-- [Data-Structures](https://github.com/WildCodeSchool/js-training-tdd/blob/master/examples/data-structures.js) [[screencast](https://scrimba.com/c/c9Py3sG)]
-- [Get](https://github.com/WildCodeSchool/js-training-tdd/blob/master/examples/get.js) [[screencast](https://scrimba.com/c/cvzg2Tq)]
-- [Set](https://github.com/WildCodeSchool/js-training-tdd/blob/master/examples/set.js) [[screencast](https://scrimba.com/c/cbWrGcg)]
+- [Primitive and Operators](https://github.com/WildCodeSchool/js-training-tdd/blob/master/examples/primitive-and-operators.js)
+- [Variables](https://github.com/WildCodeSchool/js-training-tdd/blob/master/examples/variables.js)
+- [Data-Structures](https://github.com/WildCodeSchool/js-training-tdd/blob/master/examples/data-structures.js)
+- [Get](https://github.com/WildCodeSchool/js-training-tdd/blob/master/examples/get.js)
+- [Set](https://github.com/WildCodeSchool/js-training-tdd/blob/master/examples/set.js)
 - ...[full list](https://github.com/WildCodeSchool/js-training-tdd/tree/master/examples)
 
-And we also made you a curated list of all the most usefull methods :
+And we also made you a curated list of all the most useful methods:
 
 - Math
   [min](https://devdocs.io/javascript/global_objects/math/min),

@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 // Data structures allow us to structure and organise multiple primitive data
 
@@ -16,17 +16,20 @@
   We use the curly braces `{}` to create an object
 */
 
-console.log({}) // Loggin an empty object
+console.log({}); // Loggin an empty object
 
 // To create a property we use the colon `:`
 // The first string is a key, and after the colon is the value
-console.log({ 'awesome key': 'great value' })
+console.log({ 'awesome key': 'great value' });
 // here I set the string 'great value' to the key 'awesome key'
 // I repeate, keys are always strings
 
 // Now, the true power of objects lies in storing multiple properties in them
 // To do that we just separate properties with a comma `,` like so :
-console.log({ 'first key': 1, 'second key': 22 })
+console.log({
+  'first key': 1,
+  'second key': 22
+});
 // here I set the number 1 to the key 'first key'
 // and the number 22 to 'second key'
 
@@ -37,12 +40,11 @@ console.log({
   'third key': 333,
   'fourth key': 4444,
   'the last key': 'the end',
-})
-
+});
 
 // If our key is a valid identifiers (like variables identifiers)
 // We can omit the quotes ''
-console.log({ validKey: 'valid value !' })
+console.log({ validKey: 'valid value !' });
 // Since this syntax is lighter it is prefered in JavaScript
 // so try to use valid identifiers and camelCase whenever possible
 // (same rules as variabes)
@@ -56,7 +58,7 @@ console.log({
   streetNumber: 175,
   streetLabel: 'boulevard',
   streetName: 'Matabiau',
-})
+});
 
 // Now since objects are values, we can nest them !
 // let's refactor a bit our previous object to avoid repetition in the keys
@@ -69,18 +71,17 @@ console.log({
     label: 'boulevard',
     name: 'Matabiau',
   },
-})
+});
 
 // And like all values, we can store them in variables
 const myStreet = {
   number: 175,
   label: 'boulevard',
   name: 'Matabiau',
-}
+};
 
 // sweet, let's log that variable value
-console.log(myStreet)
-
+console.log(myStreet);
 
 // Guess what, we can use variables values when creating objects !
 console.log({
@@ -88,8 +89,7 @@ console.log({
   town: 'Toulouse',
   postalCode: 31000,
   street: myStreet, // here, the value contained in myStreet is used
-})
-
+});
 
 // Let's store this address into a variable
 const address = {
@@ -97,17 +97,16 @@ const address = {
   town: 'Toulouse',
   postalCode: 31000,
   street: myStreet,
-}
+};
 
 // Now that would be a more complete user object :
 console.log({
   firstname: 'Clement',
   lastname: 'Denis',
-  email: 'cdenis@thot.space',
+  email: 'cdenis@example.com',
   age: 29,
-  address: address,
-})
-
+  address,
+});
 
 // If we use a variable as a property, like here in address
 // We can omit the key, JavaScript will use the variable identifier as it's key
@@ -115,13 +114,12 @@ console.log({
 console.log({
   firstname: 'Clement',
   lastname: 'Denis',
-  email: 'cdenis@thot.space',
+  email: 'cdenis@example.com',
   age: 29,
   address, // look ma, no key !
-})
+});
 // Of course this works only when our variable identifier is our key.
 // That's it on declaring objects !
-
 
 /*
   Array
@@ -137,11 +135,15 @@ console.log({
   We use the square brackets `[]` to create an Array
 */
 
-console.log([]) // Here I log an empty array
+console.log([]); // Here I log an empty array
 
-console.log([ 1, 2, 3 ]) // We don't need to specify the index
+console.log([ 1, 2, 3 ]); // We don't need to specify the index
 // that would roughly translate to this object:
-console.log({ '0': 1, '1': 2, '2': 3  })
+console.log({
+  0: 1,
+  1: 2,
+  2: 3
+});
 
 // So if we have a bunch of values we want to group together
 // but the keys are not important, we can use an array
@@ -159,36 +161,54 @@ const allowedCountries = [
   'Portugal',
   'Russia',
   'Iceland',
-]
+];
 
-console.log(allowedCountries)
+console.log(allowedCountries);
 
 // Of course we can make arrays of arrays
 console.log([
-  [  32, 45 ],
+  [ 32, 45 ],
   [ -38, 57 ],
-  [  87, 99 ],
-  [  57, -2 ],
+  [ 87, 99 ],
+  [ 57, -2 ],
   [ -74, -29 ],
-])
+]);
 
 // we can use variables values
-console.log([ allowedCountries, allowedCountries, allowedCountries ])
+console.log([ allowedCountries, allowedCountries, allowedCountries ]);
 // Here I made an array with 3 countries
 
 // And we can freely mix arrays and objects, any values really, surprise me
 console.log({
   head: [
-    { x: 5, y: 5 },
-    { x: 6, y: 4 },
-    { x: 7, y: 3 },
+    {
+      x: 5,
+      y: 5
+    },
+    {
+      x: 6,
+      y: 4
+    },
+    {
+      x: 7,
+      y: 3
+    },
   ],
   tail: [
-    { x: 3, y: 7 },
-    { x: 4, y: 6 },
-    { x: 5, y: 5 },
+    {
+      x: 3,
+      y: 7
+    },
+    {
+      x: 4,
+      y: 6
+    },
+    {
+      x: 5,
+      y: 5
+    },
   ],
-})
+});
 
 // This way we can model our data to have a structure that
 // help us understand it and access it

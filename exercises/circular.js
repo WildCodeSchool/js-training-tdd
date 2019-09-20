@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 /*
  * Create an object named `circular` that has a property named `circular` with
@@ -7,14 +7,14 @@
  * @notions Data-Structures, Get, Set
  */
 
-// Your code :
+// Your code:
 
 //* Begin of tests
-const assert = require('assert')
+const assert = require('assert');
 
-assert.strictEqual(typeof circular, 'object')
-assert.strictEqual(circular.circular, circular)
-assert.strictEqual(circular.circular.circular, circular)
-assert.strictEqual(circular.circular.circular.circular, circular)
-assert.strictEqual(circular.circular.circular.circular.circular, circular)
+assert.strictEqual(typeof circular, 'object');
+assert.strictEqual(circular.circular, circular);
+assert.strictEqual(circular.circular.circular, circular);
+assert.strictEqual(circular.circular.circular.circular, circular);
+assert.strictEqual(circular.circular.circular.circular.circular, circular);
 // End of tests */

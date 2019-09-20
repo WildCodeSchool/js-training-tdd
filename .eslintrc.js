@@ -440,12 +440,12 @@ module.exports = {
       // enforce a maximum depth that blocks can be nested
     'max-len': [
       'error', {
-        code: 80,
+        code: 110,
         tabWidth: 2,
       },
     ],
       // enforce a maximum line length
-    //'max-lines': 'error',
+    // 'max-lines': ['error'],
       // enforce a maximum number of lines per file
     'max-nested-callbacks': [ 'error', { max: 3 } ],
       // enforce a maximum depth that callbacks can be nested
@@ -534,7 +534,7 @@ module.exports = {
       // require JSDoc comments
     //'semi-spacing': 'error',
       // enforce consistent spacing before and after semicolons
-    'semi': [ 'error', 'never' ],
+    'semi': [ 'error' ],
       // require or disallow semicolons instead of ASI
     //'sort-keys': 'error',
       // require object keys to be sorted
