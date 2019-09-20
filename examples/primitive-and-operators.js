@@ -47,7 +47,6 @@ World!`)
 console.log(null) // used to indicate a deliberate non-value
 console.log(undefined) // used to indicate a value is not currently present
 // (although `undefined` is actually a value itself)
-// I recommand to avoid using null as much as possible and always use undefined
 
 
 // You may mix types, but results may not be what you expect
