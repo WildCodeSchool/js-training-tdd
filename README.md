@@ -14,7 +14,9 @@ You have to install Node.js, preferably **not** with the packages on Node's down
 
 ### Install Node.js on Linux/MacOS
 
- You are going to use NVM (Node Version Manager). Here's a summary of what you have to do (see [installation instructions](https://github.com/nvm-sh/nvm#installation-and-update) on the NVM repo for more details). Open your terminal and run these commands:
+**Note for Linux users**: before going further, run `which curl` in the terminal. If it shows something (e.g. `/usr/bin/curl`), you're good! Otherwise, run `sudo apt install -y curl` (Ubuntu/Debian) to install cURL.
+
+You are going to use NVM (Node Version Manager). Here's a summary of what you have to do (see [installation instructions](https://github.com/nvm-sh/nvm#installation-and-update) on the NVM repo for more details). Run these commands in your terminal:
 
 ```sh
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
