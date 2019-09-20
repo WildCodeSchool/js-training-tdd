@@ -3,39 +3,60 @@
 /*
   Function
 
-  The principle of a function is to transform data
+  The purpose of a function is to transform data.
 
-  it as Arguments (also called parameters)
-  That is the input values of your functions
+  It usually takes arguments.
+  Those are the input values of your functions.
 
-  It has a body, that will do a bunch of opperations using those arguments
+  It has a body, that will do a bunch of operations using those arguments
   and return the processed result
 
-  We symbolise this transformation with the fat arrow `=>` operator
-  so a simple function look like that: (input) => result
+  There are several ways to write functions
 
-  Functions are magical and allow you to express powerfull logic
-  but before doing that, let's try some simple opperations using functions
+  The "classical" way is to use the function keyword.
+  The "modern" way is to use the arrow syntax `=>`.
+  Both syntaxes are widely used.
+
+  Functions are magical and allow you to express powerful logic.
+  But before doing that, let's try some simple operations using functions.
 */
 
 // You have been using `console.log` since the begining which is a function
-// In JavaScript, functions are values too !
-// So to use them we need to declare them, and for that we use a variable
+// Now let us write a function, the classical way
+// We begin with the `function` keyword,
+// then indicate the name of the function: sub1
+// This one takes a number as an argument: (num),
+// and returns that number minus one.
+function sub1(num) {
+  return num - 1;
+}
 
-// Let's see an exemple with a function that add 5
-const add5 = n => n + 5;
-// Anndddd... that's it !
-// let's break this down
-// first I declare the constant variable identified by add5
-// and set it's value to our freshly made function
-// (n) here is our argument
-// then the => tells us this is a function declaration
+// In JavaScript, functions are values too!
+// We can store a function in a variable. This is called a "function expression".
+// This one takes a number as an input, and returns that number plus one.
+const add1 = function(num) {
+  return num + 1;
+};
+
+// Last, another variation: we still store a function in a variable,
+// but we write it with the arrow function syntax (introduced in ES6).
+// Let's see an exemple with a function that adds 5 to the input argument
+const add5 = (num) => num + 5;
+// Let's break this last example down
+// First we declare the constant variable identified by add5
+// and set its value to our freshly made function
+// (num) here is our argument
+// Then the => tells us this is a function declaration
 // and following is the instruction that will be executed
-// So here we tell it to use what ever value is given to `n`
+// So here we tell it to use whatever value is given to `num`
 // and apply the operator `+` on it with the value 5
+// Last, we return the result of this computation
+// The `return` keyword doesn't appear here, but there is an implicit return
 
-// ok... so how to use our baby ?
-// Well you've been calling function since the begining with console.log !
+// ok... so how to use our baby functions?
+// Well you've been calling function since the beginning with console.log!
+console.log(sub1(11));
+console.log(add1(10));
 console.log(add5(13));
 console.log(add5(20));
 console.log(add5(30));
