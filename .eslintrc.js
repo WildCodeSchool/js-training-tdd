@@ -50,8 +50,8 @@ const restrictedSyntax = [
   'ForStatement',
   'ForInStatement',
 //   'ForOfStatement',
-  'FunctionDeclaration',
-  'FunctionExpression',
+  // 'FunctionDeclaration',
+  // 'FunctionExpression',
 //   'Identifier',
 //   'IfStatement',
 //   'Literal',
@@ -393,7 +393,7 @@ module.exports = {
       // require function names to match the name of the variable or property to which they are assigned
     'func-names': [ 'error', 'never' ],
       // require or disallow named function expressions
-    'func-style': [ 'error', 'expression' ],
+    // 'func-style': [ 'error', 'expression' ],
       // enforce the consistent use of either function declarations or expressions
     //'id-blacklist': 'error',
       // disallow specified identifiers
@@ -558,7 +558,7 @@ module.exports = {
       // require parenthesis around regex literals
     'arrow-body-style': [ 'error', 'as-needed' ],
       // require braces around arrow function bodies
-    'arrow-parens': [ 'error', 'as-needed' ],
+    // 'arrow-parens': [ 'error', 'as-needed' ],
       // require parentheses around arrow function arguments
     'arrow-spacing': [ 'error', { before: true, after: true } ], 
       // enforce consistent spacing before and after the arrow in arrow functions
