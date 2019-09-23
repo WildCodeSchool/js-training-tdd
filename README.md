@@ -54,7 +54,7 @@ cd js-training-tdd
 
 ## Testing
 
-Once you have coded your masterpiece, you can start to test your solutions.
+Once you have coded your masterpiece, you can start testing your solutions.
 
 You can run tests for a single section:
 ```sh
