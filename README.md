@@ -4,13 +4,28 @@ Credits: [Clément Denis](https://github.com/kigiri) for the [original repo](htt
 
 ## Setup
 
+### 1. Get this repo
+
+First, [**fork**](https://github.com/WildCodeSchool/js-training-tdd/fork?fragment=1) this repository: you'll then have a copy of this repo under your GitHub account.
+
+Then go to wherever you store your development work, and run these commands to clone the forked repo (replace `GITHUB_LOGIN` with your login):
+
+```sh
+# download your code locally
+git clone https://github.com/GITHUB_LOGIN/js-training-tdd.git
+
+# change working directory to the newly cloned repository
+cd js-training-tdd
+```
 **Prerequisites**: you must have installed Git!
 
 Node.js is a platform which makes it possible to run JavaScript code outside the web browser.
 
 You have to install Node.js, preferably **not** with the packages on Node's download page.
 
-### Install Node.js on Linux/MacOS
+### 2. Install Node.js
+
+#### On Linux/MacOS
 
 **Note for Linux users**: before going further, run `which curl` in the terminal. If it shows something (e.g. `/usr/bin/curl`), you're good! Otherwise, run `sudo apt install -y curl` (Ubuntu/Debian) to install cURL.
 
@@ -27,7 +42,7 @@ You can verify that it worked by running `node -v`, which should display:
 
     v10.16.3
 
-### Install Node.js on Windows
+#### On Windows
 
 The original NVM doesn't support Windows. You're going to use [NVM for Windows](https://github.com/coreybutler/nvm-windows). Get to the [releases page](https://github.com/coreybutler/nvm-windows/releases). Under the latest version (1.1.7 as of September 2019), download the `nvm-setup.zip` file (or use this [direct link](https://github.com/coreybutler/nvm-windows/releases/download/1.1.7/nvm-setup.zip)).
 
@@ -39,20 +54,6 @@ nvm use v10.16.3
 ```
 
 Running `node -v` should display: `v10.16.3`.
-
-### Get this repo
-
-First, [**fork**](https://github.com/WildCodeSchool/js-training-tdd/fork?fragment=1) this repository: you'll then have a copy of this repo under your GitHub account.
-
-Then go to wherever you store your development work, and run these commands to clone the forked repo (replace `GITHUB_LOGIN` with your login):
-
-```sh
-# download your code locally
-git clone https://github.com/GITHUB_LOGIN/js-training-tdd.git
-
-# change working directory to the newly cloned repository
-cd js-training-tdd
-```
 
 ## Testing
 
