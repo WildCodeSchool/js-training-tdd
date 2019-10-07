@@ -12,7 +12,7 @@
 let isPositive = function(number) {
     if (number > 0) {
         return true;
-    } else if (number < 0) {
+    } else {
         return false;
     }
 
