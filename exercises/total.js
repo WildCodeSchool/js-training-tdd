@@ -8,6 +8,12 @@
 
 // Your code:
 
+const total = function(arr) {
+    let sum = arr.reduce((a,b) => a+b, 0)
+    return sum;
+}
+
+
 //* Begin of tests
 const assert = require('assert');
 
