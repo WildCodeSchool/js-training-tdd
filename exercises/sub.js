@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /*
  * Create a `sub` function that takes 2 numbers as arguments and substract them
@@ -7,12 +7,14 @@
  */
 
 // Your code:
-
+const sub = (num, number) => {
+  return num - number;
+};
 //* Begin of tests
-const assert = require('assert');
+const assert = require("assert");
 const rand = Math.random();
 
-assert.strictEqual(typeof sub, 'function');
+assert.strictEqual(typeof sub, "function");
 assert.strictEqual(sub.length, 2);
 assert.strictEqual(sub(2, 2), 0);
 assert.strictEqual(sub(-2, 2), -4);

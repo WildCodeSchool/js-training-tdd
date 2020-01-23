@@ -10,7 +10,13 @@
  */
 
 // Your code:
-
+const min = (num, number) => {
+    if (num > number) {
+      return number;
+    } else {
+      return num;
+    }
+  };
 //* Begin of tests
 const assert = require('assert');
 
