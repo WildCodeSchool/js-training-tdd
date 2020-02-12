@@ -9,6 +9,10 @@
 
 // Your code:
 
+const getLength = (target) => {
+    return target.length
+}
+
 //* Begin of tests
 const assert = require('assert');
 

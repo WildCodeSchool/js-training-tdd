@@ -9,11 +9,12 @@
 
 // Your code:
 const sameSign = (num, number) => {
-  if ((num && number) >= 0 || (num && number) <= 0) {
+  if (num == 0 && number == 0) {
     return true;
-  }
-if else  {
-      return false
+  } else if ((num > 0 && number > 0) || (num < 0 && number < 0)) {
+    return true;
+  } else {
+    return false;
   }
 };
 
