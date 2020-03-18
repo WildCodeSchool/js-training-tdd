@@ -7,6 +7,15 @@
  */
 
 // Your code:
+function total(array) {
+    let totalS = 0;
+    let i = 0;
+    for (i = 0; i < array.length; i++) {
+        totalS += array[i];
+    }
+    return totalS;
+}
+
 
 //* Begin of tests
 const assert = require('assert');
