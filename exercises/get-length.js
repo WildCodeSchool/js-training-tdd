@@ -8,6 +8,10 @@
  */
 
 // Your code:
+let taken = [];
+function getLength(taken) {
+    return taken.length;
+}
 
 //* Begin of tests
 const assert = require('assert');
