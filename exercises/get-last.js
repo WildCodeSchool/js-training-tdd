@@ -8,6 +8,19 @@
  */
 
 // Your code:
+let arrayToUse = [];
+let itemReturned = 0;
+function getLast(arrayToUse) {
+    itemReturned = null;
+    for (let i = 0; i < arrayToUse.length; i++) {
+        itemReturned = arrayToUse[i];
+    }
+    if (itemReturned != null) {
+        return itemReturned;
+    } else {
+        return undefined;
+    }    
+}
 
 //* Begin of tests
 const assert = require('assert');
