@@ -8,6 +8,11 @@
  */
 
 // Your code:
+let arrayToUse = [];
+function getFirst(arrayToUse) {
+    return arrayToUse[0];
+}
+
 
 //* Begin of tests
 const assert = require('assert');
