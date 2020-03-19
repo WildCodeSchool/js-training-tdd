@@ -32,15 +32,15 @@ You have to install Node.js, preferably **not** with the packages on Node's down
 You are going to use NVM (Node Version Manager). Here's a summary of what you have to do (see [installation instructions](https://github.com/nvm-sh/nvm#installation-and-update) on the NVM repo for more details). Run these commands in your terminal:
 
 ```sh
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 source ~/.bashrc
-nvm install v10.16.3
-nvm use v10.16.3
+nvm install v12.16.1
+nvm use v12.16.1
 ```
 
 You can verify that it worked by running `node -v`, which should display:
 
-    v10.16.3
+    v12.16.1
 
 #### On Windows
 
@@ -49,11 +49,11 @@ The original NVM doesn't support Windows. You're going to use [NVM for Windows](
 Extract the archive, and run `nvm-setup.exe`. Complete the setup wizard. Then, quit Git Bash if it is running, re-launch it, and type:
 
 ```sh
-nvm install v10.16.3
-nvm use v10.16.3
+nvm install v12.16.1
+nvm use v12.16.1
 ```
 
-Running `node -v` should display: `v10.16.3`.
+Running `node -v` should display: `v12.16.1`.
 
 ## Testing
 
