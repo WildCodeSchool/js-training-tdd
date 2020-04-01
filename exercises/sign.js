@@ -12,7 +12,17 @@
 
 // Your code:
 
-//* Begin of tests
+function sign(number) {
+  if (number === 0) {
+    return 0;
+  } else if (number > 0) {
+    return 1;
+  } else if (number < 0)  {
+    return -1;
+  }
+}
+
+// //* Begin of tests
 const assert = require('assert');
 
 assert.strictEqual(typeof sign, 'function');
