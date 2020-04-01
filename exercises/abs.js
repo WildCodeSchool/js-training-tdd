@@ -11,7 +11,16 @@
 
 // Your code:
 
-//* Begin of tests
+function abs(number) {
+  if (number < 0) {
+    number = number * (-1);
+    return number;
+  } else {
+    return number;
+  }
+};
+
+// //* Begin of tests
 const assert = require('assert');
 
 assert.strictEqual(typeof abs, 'function');
