@@ -8,6 +8,8 @@
 
 // Your code:
 
+const arr = [4, '2'];
+
 //* Begin of tests
 const assert = require('assert');
 
