@@ -8,12 +8,16 @@
  */
 
 // Your code:
+const str = 'string';
+const num = 'number';
+const bool = 'boolean';
+const undef = 'undefined';
 
 //* Begin of tests
 const assert = require('assert');
 
 assert.strictEqual(typeof str, 'string');
-assert.strictEqual(str, '1337');
+assert.strictEqual(str, 'HelloWorld');
 
 assert.strictEqual(typeof num, 'number');
 assert.strictEqual(num, 42);
