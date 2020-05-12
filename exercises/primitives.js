@@ -17,7 +17,7 @@ const undef = 'undefined';
 const assert = require('assert');
 
 assert.strictEqual(typeof str, 'string');
-assert.strictEqual(str, 'HelloWorld');
+assert.strictEqual(str, '1337');
 
 assert.strictEqual(typeof num, 'number');
 assert.strictEqual(num, 42);
